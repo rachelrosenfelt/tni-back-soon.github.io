@@ -1,0 +1,30 @@
+<DOCTYPE html5>
+
+  <head>
+    <meta charset="utf8" />
+    <link rel="stylesheet" href="/stylesheets/normalize.css" />
+    <link rel="stylesheet" href="/stylesheets/github-light.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+
+    <title>The New Inquiry</title>
+  </head>
+
+  <body>
+
+    <header>
+
+      {% include header.html %}
+
+    </header>
+
+    <main>
+
+      {{ page.content | markdownify }}
+
+      {% include recent.html %}
+
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
