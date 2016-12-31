@@ -14,6 +14,9 @@ collections:
   blogs-the-beheld:
     output: true
     permalink: blogs/the-beheld/:title/index.html
+  blogs-marginal-utility:
+    output: true
+    permalink: blogs/marginal-utility/:title/index.html
 
 defaults:
   - scope:
@@ -38,3 +41,9 @@ defaults:
     values:
       layout: post
       author: Autumn Whitefield-Madrano
+  - scope:
+      path: ""
+      type: "blogs-marginal-utility"
+    values:
+      layout: post
+      author: Rob Horning
