@@ -1,3 +1,5 @@
+baseurl: /test-tni
+
 exclude: [README.md, template.md]
 
 collections:
