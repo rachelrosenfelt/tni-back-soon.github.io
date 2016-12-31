@@ -2,7 +2,7 @@
 
 <ul>
   {% for feature in site.features %}
-  <li><a href="{{feature.url}}">{{ feature.post_title }}</a>
+  <li><a href="{{ site.baseurl }}{{feature.url}}">{{ feature.post_title }}</a>
     {% if feature.author %}
     by {{ feature.author }}
     {% endif %}
@@ -15,7 +15,7 @@
 
 <ul>
   {% for essay in site.essays %}
-  <li><a href="{{essay.url}}">{{ essay.post_title }}</a>
+  <li><a href="{{ site.baseurl }}{{essay.url}}">{{ essay.post_title }}</a>
     {% if essay.author %}
     by {{ essay.author }}
     {% endif %}
