@@ -1,0 +1,24 @@
+<h2>Features</h2>
+
+<ul>
+  {% for feature in site.features %}
+  <li><a href="{{feature.url}}">{{ feature.post_title }}</a>
+    {% if feature.author %}
+    by {{ feature.author }}
+    {% endif %}
+   </a></li>
+  {% endfor %}
+   <li><a href="nyt">From Our Colleagues at the New York Times</a></li>
+</ul>
+
+<h2>Essays</h2>
+
+<ul>
+  {% for essay in site.essays %}
+  <li><a href="{{essay.url}}">{{ essay.post_title }}</a>
+    {% if essay.author %}
+    by {{ essay.author }}
+    {% endif %}
+  </a></li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,21 @@
+exclude: [README.md, template.md]
+
+collections:
+  features:
+    output: true
+    permalink: features/:title/index.html
+  essays:
+    output: true
+    permalink: essays/:title/index.html
+
+defaults:
+  - scope:
+      path: ""
+      type: "features"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "essays"
+    values:
+      layout: post

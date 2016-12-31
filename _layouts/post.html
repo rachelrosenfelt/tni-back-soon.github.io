@@ -1,0 +1,32 @@
+<DOCTYPE html5>
+
+  <head>
+    <meta charset="utf8" />
+    <link rel="stylesheet" href="/stylesheets/normalize.css" />
+    <link rel="stylesheet" href="/stylesheets/github-light.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+
+    <title>The New Inquiry: {{ page.post_title }}</title>
+  </head>
+
+  <body>
+
+    <header>
+
+      {% include header.html %}
+
+      <h2> {{ page.post_title }} </h2>
+
+      <p> {{ page.author }} </p>
+
+    </header>
+
+    <main>
+
+      {{ content }}
+
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
