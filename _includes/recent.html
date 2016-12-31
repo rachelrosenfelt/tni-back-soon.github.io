@@ -19,6 +19,24 @@
     {% if essay.author %}
     by {{ essay.author }}
     {% endif %}
-  </a></li>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Blogs</h2>
+
+<h3>Zunguzungu by Aaron Brady</h3>
+
+<ul>
+  {% for blog in site.blogs-zunguzungu %}
+  <li><a href="{{ site.baseurl }}{{blog.url}}">{{ blog.post_title }}</a></li>
+  {% endfor %}
+</ul>
+
+<h3>The Beheld by Autumn Whitefield-Madrano</h3>
+
+<ul>
+  {% for blog in site.blogs-the-beheld %}
+  <li><a href="{{ site.baseurl }}{{blog.url}}">{{ blog.post_title }}</a></li>
   {% endfor %}
 </ul>

@@ -8,6 +8,12 @@ collections:
   essays:
     output: true
     permalink: essays/:title/index.html
+  blogs-zunguzungu:
+    output: true
+    permalink: blogs/zunguzungu/:title/index.html
+  blogs-the-beheld:
+    output: true
+    permalink: blogs/the-beheld/:title/index.html
 
 defaults:
   - scope:
@@ -20,3 +26,15 @@ defaults:
       type: "essays"
     values:
       layout: post
+  - scope:
+      path: ""
+      type: "blogs-zunguzungu"
+    values:
+      layout: post
+      author: Aaron Brady
+  - scope:
+      path: ""
+      type: "blogs-the-beheld"
+    values:
+      layout: post
+      author: Autumn Whitefield-Madrano
