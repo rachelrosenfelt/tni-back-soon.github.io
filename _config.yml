@@ -1,6 +1,6 @@
-baseurl: /test-tni
+baseurl: /tni-back-soon
 
-exclude: [README.md, template.md]
+exclude: [README.md]
 
 collections:
   features:
