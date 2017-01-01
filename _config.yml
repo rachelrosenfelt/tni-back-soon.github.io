@@ -34,7 +34,7 @@ defaults:
       type: "blogs-zunguzungu"
     values:
       layout: post
-      author: Aaron Brady
+      author: Aaron Bady
   - scope:
       path: ""
       type: "blogs-the-beheld"
